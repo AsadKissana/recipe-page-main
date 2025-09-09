@@ -4,27 +4,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap"
+    rel="stylesheet">
   <title>Frontend Mentor | Recipe page</title>
+  <style>
+    h1,
+    h2 {
+      font-family: 'Young Serif', serif;
+    }
+    p,li,table{
+      font-family: 'Outfit', sans-serif;
+    }
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      
+      background-color: rgb(255, 227, 231);
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .time-info {
+      list-style-type: none;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: rgb(255, 227, 231);
+    }
+  </style>
 
 </head>
 
 <body>
+  <div class="container">
 
-<div class="recipe-image">
-  <img src="D:\BVL-MERN\recipe-page-main\assets\images\image-omelette.jpeg" alt="omelette-image" height="200px" width="200px">
-</div>
-
+    <div class="recipe-image">
+      <img src="D:\BVL-MERN\recipe-page-main\assets\images\image-omelette.jpeg" alt="omelette-image" height="200px"
+      width="200px">
+  </div>
   
+
   <h1>Simple Omelette Recipe</h1>
   <p>
     An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked
     to perfection, optionally filled with your choice of cheese, vegetables, or meats.
   </p>
-
+  
   <div class="time-info">
     <h3>Preparation time</h3>
     <ul>
@@ -72,11 +110,11 @@
       </li>
     </ol>
   </div>
-
+  
   <div class="nutrition">
     <h2>Nutrition</h2>
     <p>The table below shows nutritional values per serving without the additional fillings.</p>
-
+    
     <table>
       <tr>
         <td>Calories</td>
@@ -101,6 +139,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Asad Kissana</a>.
   </div>
+</div>
 </body>
 
 </html>
